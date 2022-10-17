@@ -1,0 +1,101 @@
+.button{
+  background: transparent;
+}
+
+.wrapper{
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  background: aliceblue;
+  cursor: pointer;
+
+
+  .titleWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    .title{
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .value{
+        font-size: 24px;
+        color: coral;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .authorWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+
+    .title{
+      font-size: 16px;
+      text-decoration: underline;
+    }
+    .value{
+      font-size: 24px;
+      color: coral;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .downloadsWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+
+    .title{
+      font-size: 16px;
+      text-decoration: underline;
+    }
+    .value{
+      font-size: 24px;
+      color: coral;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.modal{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  background: azure;
+
+  .modalHeader{
+    margin-top: 24px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .edit{
+      font-size: 28px;
+    }
+  }
+
+  .close{
+    font-size: 32px;
+    background: transparent;
+  }
+}

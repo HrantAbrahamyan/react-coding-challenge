@@ -1,0 +1,51 @@
+.header{
+  width: 100%;
+  background: coral;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button{
+    font-size: 24px;
+    border: none;
+    background: transparent;
+    color: aliceblue;
+    transition: all 0.5s ease;
+
+    &:hover{
+      color: #111314;
+    }
+  }
+}
+
+
+.modal{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  background: azure;
+
+  .modalHeader{
+    margin-top: 24px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .add{
+      font-size: 28px;
+
+    }
+  }
+
+  .close{
+    font-size: 32px;
+    background: transparent;
+  }
+}
